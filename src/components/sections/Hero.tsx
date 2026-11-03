@@ -11,7 +11,7 @@ import { HeroScene } from "@/components/ui/Sketches";
 const WORDS = [
   { word: "THINK.", cls: "text-ink", indent: "" },
   { word: "TRY.", cls: "text-ink", indent: "pl-[0.55em]" },
-  { word: "DO.", cls: "text-ember", indent: "pl-[1.1em]" },
+  { word: "GO.", cls: "text-ember", indent: "pl-[1.1em]" },
 ];
 
 export function Hero() {
