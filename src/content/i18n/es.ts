@@ -323,6 +323,27 @@ export const es: Dictionary = {
     },
   },
 
+  email: {
+    subject: "Ya estás en la lista de Familias Fundadoras de Think Try Go",
+    preheader: "Te avisaremos cuando las primeras aventuras en Coronado estén listas.",
+    heading: "¡Ya estás en la lista!",
+    greeting: "¡Gracias, {name}!",
+    body: "Te has unido a la lista de Familias Fundadoras de Think Try Go. Te avisaremos cuando las primeras aventuras en Coronado estén listas.",
+    summaryTitle: "Esto es lo que nos contaste",
+    labels: {
+      ages: "Edades",
+      interests: "Aventuras",
+      days: "Mejores días",
+      duration: "Duración del taller",
+      language: "Idioma",
+      area: "Zona",
+    },
+    notBooking: "Todavía no es una reserva. Te escribiremos antes de abrir los cupos para que elijas tu taller.",
+    share: "¿Conoces a otro niño curioso? Comparte {url}",
+    signoff: "Nos vemos en el taller,\nEl equipo de Think Try Go",
+    footer: "Recibes este correo porque te uniste a la lista de Familias Fundadoras en {url}. Si quieres darte de baja, solo responde y avísanos.",
+  },
+
   sketches: {
     racer: ["¿ruedas más juntas? ↔"],
     rescue: ["¿cuerda? ¿gancho? ¿balsa?", "¡prohibido pisar la isla!"],

@@ -323,6 +323,27 @@ export const en = {
     },
   },
 
+  email: {
+    subject: "You're on the Think Try Go Founding Families list",
+    preheader: "We'll let you know when the first Coronado adventures are ready.",
+    heading: "You're on the list!",
+    greeting: "Thanks, {name}!",
+    body: "You've joined the Think Try Go Founding Families list. We'll let you know when the first Coronado adventures are ready.",
+    summaryTitle: "Here's what you told us",
+    labels: {
+      ages: "Kids' ages",
+      interests: "Adventures",
+      days: "Best days",
+      duration: "Workshop length",
+      language: "Language",
+      area: "Area",
+    },
+    notBooking: "This isn't a booking yet. You'll hear from us before places open, so you can choose your workshop.",
+    share: "Know another curious kid? Share {url}",
+    signoff: "See you at the workbench,\nThe Think Try Go team",
+    footer: "You're receiving this because you joined the Founding Families list at {url}. To be removed, just reply and let us know.",
+  },
+
   sketches: {
     racer: ["wheels closer? ↔"],
     rescue: ["rope? hook? raft?", "no stepping on the island!"],

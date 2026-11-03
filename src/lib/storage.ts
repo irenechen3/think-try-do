@@ -55,3 +55,30 @@ async function saveToFile(row: WaitlistRow): Promise<StorageResult> {
   await appendFile(path.join(dir, "waitlist.jsonl"), JSON.stringify(record) + "\n", "utf8");
   return { ok: true, backend: "file" };
 }
+
+/** Total sign-ups so far (used in the team alert subject). Null if it can't be read. */
+export async function countSignups(): Promise<number | null> {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  try {
+    if (url && key) {
+      const table = process.env.SUPABASE_TABLE || "waitlist_signups";
+      const res = await fetch(`${url.replace(/\/$/, "")}/rest/v1/${encodeURIComponent(table)}?select=id`, {
+        method: "HEAD",
+        headers: { apikey: key, Authorization: `Bearer ${key}`, Prefer: "count=exact" },
+        cache: "no-store",
+      });
+      const total = res.headers.get("content-range")?.split("/")[1];
+      return total && total !== "*" ? Number(total) : null;
+    }
+    if (process.env.NODE_ENV !== "production") {
+      const { readFile } = await import("node:fs/promises");
+      const path = await import("node:path");
+      const data = await readFile(path.join(process.cwd(), ".data", "waitlist.jsonl"), "utf8");
+      return data.split("\n").filter(Boolean).length;
+    }
+  } catch {
+    /* fall through */
+  }
+  return null;
+}

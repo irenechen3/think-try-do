@@ -1,6 +1,7 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { after, NextResponse, type NextRequest } from "next/server";
 import { parseSubmission } from "@/lib/waitlist";
-import { saveSignup } from "@/lib/storage";
+import { sendSignupEmails } from "@/lib/email";
+import { countSignups, saveSignup } from "@/lib/storage";
 
 export const runtime = "nodejs";
 
@@ -44,6 +45,11 @@ export async function POST(req: NextRequest) {
     console.error("[waitlist] save failed:", result.reason);
     return NextResponse.json({ ok: false, error: "storage" }, { status: 503 });
   }
+
+  // Emails go out after the response, so the parent never waits on them
+  // and an email failure can't turn a saved sign-up into an error.
+  const row = parsed.row;
+  after(async () => sendSignupEmails(row, await countSignups()));
 
   return NextResponse.json({ ok: true });
 }

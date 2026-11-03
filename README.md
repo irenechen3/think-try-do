@@ -45,6 +45,10 @@ npm run typecheck
 | `SUPABASE_URL` | yes (prod) | `https://xxxx.supabase.co` |
 | `SUPABASE_SERVICE_ROLE_KEY` | yes (prod) | Server-only key. It is never sent to the browser. |
 | `SUPABASE_TABLE` | no | Defaults to `waitlist_signups`. |
+| `RESEND_API_KEY` | no | Turns on sign-up emails (see below). |
+| `NOTIFY_EMAIL` | no | Where new-sign-up alerts go. |
+| `EMAIL_FROM` | no | Sender. Defaults to `Think Try Go <hello@thinktrygo.com>`. |
+| `EMAIL_REPLY_TO` | no | Where parents' replies go. Defaults to `NOTIFY_EMAIL`. |
 | `NEXT_PUBLIC_GA_ID` | no | GA4 measurement ID (`G-XXXX`). Leave it empty and no analytics script loads. |
 
 If Supabase is **not** configured in production, the form returns a friendly error instead of silently losing a sign-up.
@@ -58,6 +62,15 @@ If Supabase is **not** configured in production, the form returns a friendly err
 3. Copy the **Project URL** and **service_role key** (Settings → API) into the Vercel env vars, then redeploy.
 
 The browser never talks to Supabase directly. Every write goes through `POST /api/waitlist`, which validates, normalises, rate-limits and honeypot-checks each submission.
+
+### Sign-up emails (Resend)
+
+After each sign-up is saved, the site sends two emails through Resend:
+
+- **Parent confirmation:** in the language the parent was viewing the site in. It repeats their answers and makes clear it isn't a booking.
+- **Team alert:** sent to `NOTIFY_EMAIL`, with every answer and the sign-up number. Replying writes straight to the parent.
+
+To set it up, verify `thinktrygo.com` in Resend (sending records only; leave receiving off), create an API key, add `RESEND_API_KEY` and `NOTIFY_EMAIL` in Vercel, then redeploy. Emails are sent after the response, so a Resend problem never blocks or loses a sign-up; failures are logged in Vercel's function logs as `[email] send failed`. The copy for the parent email is in the `email` section of `src/content/i18n/en.ts` and `es.ts`.
 
 ---
 
