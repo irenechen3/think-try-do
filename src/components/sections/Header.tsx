@@ -38,9 +38,9 @@ export function Header() {
         {t.nav.skip}
       </a>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-[4.5rem] sm:px-6 lg:px-8">
-        <a href={`#${SECTION_IDS.top}`} className="flex items-center gap-2.5" aria-label="Think Try Do — home">
+        <a href={`#${SECTION_IDS.top}`} className="flex items-center gap-2.5" aria-label="Think Try Go — home">
           <LogoMark className="h-10 w-12" />
-          <span className="hidden font-display text-lg font-extrabold tracking-tight min-[420px]:inline">Think Try Do</span>
+          <span className="hidden font-display text-lg font-extrabold tracking-tight min-[420px]:inline">Think Try Go</span>
         </a>
 
         <nav aria-label="Main" className="hidden lg:block">

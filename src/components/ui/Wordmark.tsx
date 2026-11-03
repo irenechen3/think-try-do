@@ -1,7 +1,7 @@
 /**
- * THINK / TRY / DO text treatment.
+ * THINK / TRY / GO text treatment.
  * - "stack": three words stacked, small arrows between — the primary mark.
- * - "inline": THINK → TRY → DO for tight horizontal spaces.
+ * - "inline": THINK → TRY → GO for tight horizontal spaces.
  */
 
 type WordmarkProps = {
@@ -20,7 +20,7 @@ export function Wordmark({ variant = "stack", className = "", tone = "ink" }: Wo
         <Arrow />
         <span>TRY</span>
         <Arrow />
-        <span className="text-ember">DO</span>
+        <span className="text-ember">GO</span>
       </span>
     );
   }
@@ -29,7 +29,7 @@ export function Wordmark({ variant = "stack", className = "", tone = "ink" }: Wo
     <span className={`inline-flex flex-col font-display leading-[0.82] font-extrabold tracking-[-0.04em] ${color} ${className}`}>
       <span>THINK</span>
       <span className="pl-[0.5em]">TRY</span>
-      <span className="pl-[1em] text-ember">DO</span>
+      <span className="pl-[1em] text-ember">GO</span>
     </span>
   );
 }
@@ -52,7 +52,7 @@ export function LogoMark({ className = "" }: { className?: string }) {
       <span className="flex flex-col">
         <span>THINK</span>
         <span className="pl-1">TRY</span>
-        <span className="pl-2 text-ember">DO</span>
+        <span className="pl-2 text-ember">GO</span>
       </span>
     </span>
   );

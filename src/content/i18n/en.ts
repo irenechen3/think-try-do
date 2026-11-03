@@ -2,12 +2,12 @@
  * English copy — the source of truth for every string on the site.
  * Spanish (es.ts) must match this shape exactly; TypeScript enforces it.
  *
- * Brand words THINK / TRY / DO stay in English in every language.
+ * Brand words THINK / TRY / GO stay in English in every language.
  */
 
 export const en = {
   meta: {
-    title: "Think Try Do | Real-World Adventures for Curious Kids",
+    title: "Think Try Go | Real-World Adventures for Curious Kids",
     description:
       "Hands-on building, problem solving and adventure workshops for kids aged 4–12. Coming soon to Coronado, Panama.",
   },
@@ -54,7 +54,7 @@ export const en = {
       "changing their mind when the evidence changes",
       "turning an idea into something real",
     ],
-    close: "Think Try Do gives children more chances to practise those skills where they matter most:",
+    close: "Think Try Go gives children more chances to practise those skills where they matter most:",
     closeEmphasis: "in the real world.",
     sideNote: "Answers are getting easier to find. Knowing what to ask, what to believe and what to try next matters more than ever.",
   },
@@ -74,7 +74,7 @@ export const en = {
         lines: ["Build it.", "Test it.", "See what happens.", "Maybe it doesn't work.", "That's part of the adventure."],
       },
       {
-        word: "DO",
+        word: "GO",
         sub: "Make it happen",
         lines: ["Change it.", "Try again.", "Make something happen."],
       },
@@ -95,12 +95,12 @@ export const en = {
         family: "Little Builders",
         title: "Build your own wooden racer",
         tagline: "Saw. Sand. Build. Test.",
-        body: "Then race your creation down the Think Try Do ramp and discover how small design changes — wheels, weight, balance — change the result. Not an identical car. Can you make yours work better?",
+        body: "Then race your creation down the Think Try Go ramp and discover how small design changes — wheels, weight, balance — change the result. Not an identical car. Can you make yours work better?",
         skills: ["Problem solving", "Practical confidence", "Experimentation", "Persistence"],
         imageAlt: "A hand-built wooden racer rolling down a ramp.",
       },
       rescue: {
-        family: "Think Try Do Challenge",
+        family: "Think Try Go Challenge",
         title: "The Great Rescue",
         tagline: "Something has been stranded.",
         body: "A toy is stuck on an island. Your team has limited materials and one rule: nobody steps on the island. Can you invent a way to bring it home?",
@@ -108,7 +108,7 @@ export const en = {
         imageAlt: "A toy stranded on a small island with a rope rescue line being built.",
       },
       bridge: {
-        family: "Think Try Do Challenge",
+        family: "Think Try Go Challenge",
         title: "The Bridge Challenge",
         tagline: "Strong enough to carry the load?",
         body: "Design it. Build it. Break it. Improve it. Use only the materials on the table to span the gap — then pile on the weight and find out.",
@@ -116,7 +116,7 @@ export const en = {
         imageAlt: "A cardboard and stick bridge holding a stack of weights.",
       },
       mystery: {
-        family: "Think Try Do Challenge",
+        family: "Think Try Go Challenge",
         title: "Mystery Mission",
         tagline: "Something doesn't add up.",
         body: "Follow the clues. Question the evidence. Spot what's missing. Work out what actually happened — and be ready to explain how you know.",
@@ -160,7 +160,7 @@ export const en = {
   },
 
   skills: {
-    eyebrow: "Why Think Try Do",
+    eyebrow: "Why Think Try Go",
     headline: "What they're really practising.",
     chips: [
       "Critical thinking",
@@ -204,7 +204,7 @@ export const en = {
 
   founding: {
     eyebrow: "Coronado Founding Families",
-    headline: "Help us launch Think Try Do in Coronado.",
+    headline: "Help us launch Think Try Go in Coronado.",
     body: "We're preparing our first workshop series for families in Coronado and the surrounding Panamá Oeste communities. Before we lock in the venue and timetable, we want local families to help decide what comes first.",
     tellUsTitle: "Join the list and tell us:",
     tellUs: ["your children's ages", "which adventures they'd love", "when you'd come", "where you're based"],
@@ -256,8 +256,8 @@ export const en = {
     loveLabel: "What kind of activity would your child LOVE to try?",
     lovePlaceholder: "Rockets? Treehouses? A real detective case? Tell us anything.",
     consentLabel:
-      "Yes, contact me about Think Try Do launch news. I can unsubscribe any time.",
-    privacyNote: "We'll only use your details to plan and announce Think Try Do workshops. We never sell or share them.",
+      "Yes, contact me about Think Try Go launch news. I can unsubscribe any time.",
+    privacyNote: "We'll only use your details to plan and announce Think Try Go workshops. We never sell or share them.",
 
     options: {
       interests: {
@@ -317,7 +317,7 @@ export const en = {
       title: "You're in!",
       body: "We'll let you know when the first Coronado adventures are ready.",
       note: "You're on the Founding Families list — this isn't a booking yet. We'll be in touch before places open so you can choose your workshop.",
-      share: "Know another curious kid? Share Think Try Do",
+      share: "Know another curious kid? Share Think Try Go",
       shareText: "Real-world adventure workshops for kids 4–12, coming to Coronado. Join the Founding Families list:",
       copied: "Link copied!",
     },
@@ -349,7 +349,7 @@ export const en = {
       },
       {
         q: "What ages are workshops for?",
-        a: "Think Try Do is designed for children aged roughly 4–12, with workshops grouped by suitable age and challenge level.",
+        a: "Think Try Go is designed for children aged roughly 4–12, with workshops grouped by suitable age and challenge level.",
       },
       {
         q: "Do parents stay?",
@@ -361,7 +361,7 @@ export const en = {
       },
       {
         q: "Is this a school or tutoring program?",
-        a: "No. Think Try Do is about learning through real-world adventure play — making, experimenting and solving problems. No worksheets, no screens.",
+        a: "No. Think Try Go is about learning through real-world adventure play — making, experimenting and solving problems. No worksheets, no screens.",
       },
       {
         q: "Is the program available in Spanish?",

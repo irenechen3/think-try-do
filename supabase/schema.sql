@@ -1,4 +1,4 @@
--- Think Try Do — Founding Families waitlist
+-- Think Try Go — Founding Families waitlist
 -- Run once in the Supabase SQL editor (Dashboard → SQL → New query).
 
 create extension if not exists "pgcrypto";

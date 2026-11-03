@@ -13,7 +13,7 @@ export type Venue = {
 };
 
 export const SITE = {
-  name: "Think Try Do",
+  name: "Think Try Go",
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
   region: "Coronado, Panamá Oeste",
   country: "PA",

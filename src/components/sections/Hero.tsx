@@ -38,7 +38,7 @@ export function Hero() {
           </p>
 
           <h1 className="mt-6 max-w-xl text-[1.75rem] leading-[1.08] font-extrabold sm:text-4xl lg:text-[2.6rem]">
-            <span className="sr-only">Think Try Do — </span>
+            <span className="sr-only">Think Try Go — </span>
             {t.hero.headline}
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft sm:text-xl">{t.hero.body}</p>

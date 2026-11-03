@@ -35,7 +35,7 @@ export function Footer() {
             </p>
           ) : null}
           <p>
-            © {new Date().getFullYear()} Think Try Do. {t.footer.rights}
+            © {new Date().getFullYear()} Think Try Go. {t.footer.rights}
           </p>
         </div>
       </div>

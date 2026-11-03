@@ -24,7 +24,7 @@ export function FinalCta() {
           <ArrowRight className="hidden h-10 w-20 text-sun sm:block" delay={400} />
           <span>TRY</span>
           <ArrowRight className="hidden h-10 w-20 text-sun sm:block" delay={900} />
-          <span className="text-sun">DO</span>
+          <span className="text-sun">GO</span>
         </Reveal>
 
         <Reveal delay={250} className="mt-12">

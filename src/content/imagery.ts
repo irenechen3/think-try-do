@@ -49,6 +49,6 @@ export const IMAGERY = {
   og: {
     src: null,
     prompt:
-      "Social share image 1200×630: warm sand background, bold stacked wordmark THINK / TRY / DO in near-black with an orange hand-drawn arrow connecting them; right side a photo of a child's dusty hands holding a hand-built wooden racer. Caption: Real-world adventures for curious kids · Coronado, Panama · Ages 4–12.",
+      "Social share image 1200×630: warm sand background, bold stacked wordmark THINK / TRY / GO in near-black with an orange hand-drawn arrow connecting them; right side a photo of a child's dusty hands holding a hand-built wooden racer. Caption: Real-world adventures for curious kids · Coronado, Panama · Ages 4–12.",
   },
 } satisfies Record<string, ImageSlot>;

@@ -1,6 +1,6 @@
-# Think Try Do: trial-launch site
+# Think Try Go: trial-launch site
 
-A one-page market-validation site for **Think Try Do**, hands-on adventure workshops for kids aged 4–12 in Coronado, Panamá Oeste.
+A one-page market-validation site for **Think Try Go**, hands-on adventure workshops for kids aged 4–12 in Coronado, Panamá Oeste.
 
 The site explains the concept, collects **Founding Families** waitlist sign-ups, and records demand signals: ages, which adventures, days, duration, language and location. It does **not** claim a venue, dates or pricing. Those fields are `null` until you fill them in.
 
@@ -41,7 +41,7 @@ npm run typecheck
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | yes | Your live URL, e.g. `https://thinktrydo.com`. Used for canonical and Open Graph URLs. |
+| `NEXT_PUBLIC_SITE_URL` | yes | Your live URL, e.g. `https://thinktrygo.com`. Used for canonical and Open Graph URLs. |
 | `SUPABASE_URL` | yes (prod) | `https://xxxx.supabase.co` |
 | `SUPABASE_SERVICE_ROLE_KEY` | yes (prod) | Server-only key. It is never sent to the browser. |
 | `SUPABASE_TABLE` | no | Defaults to `waitlist_signups`. |
@@ -103,7 +103,7 @@ Open `src/content/site.ts`:
 venue: { name: "…", address: "…", mapUrl: "…" },
 firstWorkshopDate: "Saturday 6 February 2027",
 pricing: "…",
-contactEmail: "hello@thinktrydo.com",
+contactEmail: "hello@thinktrygo.com",
 instagramUrl: "https://instagram.com/…",
 whatsappNumber: "507XXXXXXXX",
 ```
@@ -155,5 +155,5 @@ In GA4, register `interests`, `child_ages`, `preferred_days`, `location`, `langu
 
 - **Palette:** sand `#f3ecdf`, ink `#1c1b18`, ember (terracotta) `#e2582b`, moss `#1d6a59`, plus a sun yellow `#f2b43c` used sparingly. The tokens are in `src/app/globals.css`.
 - **Type:** Bricolage Grotesque (display), Inter (body) and Caveat (hand-written notes). All three are self-hosted via `next/font`.
-- **Motion:** used sparingly. There is a THINK → TRY → DO rise in the hero, arrows and underlines that draw in, and cards that fade up once on scroll. All of it is disabled under `prefers-reduced-motion`, and content stays visible without JavaScript.
+- **Motion:** used sparingly. There is a THINK → TRY → GO rise in the hero, arrows and underlines that draw in, and cards that fade up once on scroll. All of it is disabled under `prefers-reduced-motion`, and content stays visible without JavaScript.
 - **Mobile:** designed at 390 px first. Tap targets are at least 48 px. A sticky "Join the list" bar appears after the hero and hides while the form is on screen.

@@ -20,7 +20,7 @@ export function SuccessCard() {
 
   const share = async () => {
     track("share_click", { method: "native_or_copy" });
-    const data = { title: "Think Try Do", text: s.shareText, url: shareUrl };
+    const data = { title: "Think Try Go", text: s.shareText, url: shareUrl };
     try {
       if (navigator.share) {
         await navigator.share(data);

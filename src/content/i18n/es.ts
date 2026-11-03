@@ -7,7 +7,7 @@ import type { Dictionary } from "./en";
 
 export const es: Dictionary = {
   meta: {
-    title: "Think Try Do | Aventuras del mundo real para niños curiosos",
+    title: "Think Try Go | Aventuras del mundo real para niños curiosos",
     description:
       "Talleres prácticos de construcción, resolución de problemas y aventura para niños de 4 a 12 años. Muy pronto en Coronado, Panamá.",
   },
@@ -54,7 +54,7 @@ export const es: Dictionary = {
       "cambiar de opinión cuando cambian las pruebas",
       "convertir una idea en algo real",
     ],
-    close: "Think Try Do les da a los niños más oportunidades de practicar esas habilidades donde más importan:",
+    close: "Think Try Go les da a los niños más oportunidades de practicar esas habilidades donde más importan:",
     closeEmphasis: "en el mundo real.",
     sideNote: "Las respuestas son cada vez más fáciles de encontrar. Saber qué preguntar, qué creer y qué probar después importa más que nunca.",
   },
@@ -74,7 +74,7 @@ export const es: Dictionary = {
         lines: ["Constrúyelo.", "Pruébalo.", "Mira qué pasa.", "Quizás no funciona.", "Eso también es parte de la aventura."],
       },
       {
-        word: "DO",
+        word: "GO",
         sub: "Hazlo realidad",
         lines: ["Cámbialo.", "Inténtalo otra vez.", "Haz que suceda."],
       },
@@ -95,12 +95,12 @@ export const es: Dictionary = {
         family: "Little Builders",
         title: "Construye tu propio carrito de madera",
         tagline: "Sierra. Lija. Construye. Prueba.",
-        body: "Luego lánzalo por la rampa de Think Try Do y descubre cómo pequeños cambios — ruedas, peso, equilibrio — cambian el resultado. No se trata de copiar un carro. ¿Puedes hacer que el tuyo funcione mejor?",
+        body: "Luego lánzalo por la rampa de Think Try Go y descubre cómo pequeños cambios — ruedas, peso, equilibrio — cambian el resultado. No se trata de copiar un carro. ¿Puedes hacer que el tuyo funcione mejor?",
         skills: ["Resolución de problemas", "Confianza práctica", "Experimentación", "Perseverancia"],
         imageAlt: "Un carrito de madera hecho a mano bajando por una rampa.",
       },
       rescue: {
-        family: "Reto Think Try Do",
+        family: "Reto Think Try Go",
         title: "El Gran Rescate",
         tagline: "Algo se ha quedado atrapado.",
         body: "Un juguete está varado en una isla. Tu equipo tiene materiales limitados y una regla: nadie pisa la isla. ¿Puedes inventar una forma de traerlo de vuelta?",
@@ -108,7 +108,7 @@ export const es: Dictionary = {
         imageAlt: "Un juguete varado en una pequeña isla mientras se construye una línea de rescate con cuerda.",
       },
       bridge: {
-        family: "Reto Think Try Do",
+        family: "Reto Think Try Go",
         title: "El Reto del Puente",
         tagline: "¿Lo bastante fuerte para la carga?",
         body: "Diséñalo. Constrúyelo. Rómpelo. Mejóralo. Usa solo los materiales de la mesa para cruzar el hueco — y luego ve añadiendo peso para descubrirlo.",
@@ -116,7 +116,7 @@ export const es: Dictionary = {
         imageAlt: "Un puente de cartón y palitos sosteniendo una pila de pesas.",
       },
       mystery: {
-        family: "Reto Think Try Do",
+        family: "Reto Think Try Go",
         title: "Misión Misterio",
         tagline: "Algo no cuadra.",
         body: "Sigue las pistas. Cuestiona las pruebas. Detecta lo que falta. Descubre qué pasó en realidad — y prepárate para explicar cómo lo sabes.",
@@ -160,7 +160,7 @@ export const es: Dictionary = {
   },
 
   skills: {
-    eyebrow: "Por qué Think Try Do",
+    eyebrow: "Por qué Think Try Go",
     headline: "Lo que realmente están practicando.",
     chips: [
       "Pensamiento crítico",
@@ -204,7 +204,7 @@ export const es: Dictionary = {
 
   founding: {
     eyebrow: "Familias Fundadoras de Coronado",
-    headline: "Ayúdanos a lanzar Think Try Do en Coronado.",
+    headline: "Ayúdanos a lanzar Think Try Go en Coronado.",
     body: "Estamos preparando nuestra primera serie de talleres para familias de Coronado y comunidades cercanas de Panamá Oeste. Antes de definir la sede y el horario, queremos que las familias de la zona nos ayuden a decidir por dónde empezar.",
     tellUsTitle: "Únete a la lista y cuéntanos:",
     tellUs: ["las edades de tus hijos", "qué aventuras les encantarían", "cuándo podrían venir", "en qué zona viven"],
@@ -256,8 +256,8 @@ export const es: Dictionary = {
     loveLabel: "¿Qué tipo de actividad le ENCANTARÍA probar a tu hijo/a?",
     lovePlaceholder: "¿Cohetes? ¿Casas en el árbol? ¿Un caso de detectives de verdad? Cuéntanos lo que sea.",
     consentLabel:
-      "Sí, quiero recibir novedades del lanzamiento de Think Try Do. Puedo darme de baja cuando quiera.",
-    privacyNote: "Solo usaremos tus datos para planificar y anunciar los talleres de Think Try Do. Nunca los vendemos ni compartimos.",
+      "Sí, quiero recibir novedades del lanzamiento de Think Try Go. Puedo darme de baja cuando quiera.",
+    privacyNote: "Solo usaremos tus datos para planificar y anunciar los talleres de Think Try Go. Nunca los vendemos ni compartimos.",
 
     options: {
       interests: {
@@ -317,7 +317,7 @@ export const es: Dictionary = {
       title: "¡Ya estás dentro!",
       body: "Te avisaremos cuando las primeras aventuras en Coronado estén listas.",
       note: "Estás en la lista de Familias Fundadoras — todavía no es una reserva. Te escribiremos antes de abrir los cupos para que elijas tu taller.",
-      share: "¿Conoces a otro niño curioso? Comparte Think Try Do",
+      share: "¿Conoces a otro niño curioso? Comparte Think Try Go",
       shareText: "Talleres de aventura del mundo real para niños de 4 a 12 años, muy pronto en Coronado. Únete a las Familias Fundadoras:",
       copied: "¡Enlace copiado!",
     },
@@ -349,7 +349,7 @@ export const es: Dictionary = {
       },
       {
         q: "¿Para qué edades son?",
-        a: "Think Try Do está pensado para niños de aproximadamente 4 a 12 años, con talleres agrupados por edad y nivel de reto.",
+        a: "Think Try Go está pensado para niños de aproximadamente 4 a 12 años, con talleres agrupados por edad y nivel de reto.",
       },
       {
         q: "¿Los padres se quedan?",
@@ -361,7 +361,7 @@ export const es: Dictionary = {
       },
       {
         q: "¿Es una escuela o un programa de tutorías?",
-        a: "No. Think Try Do trata de aprender a través del juego y la aventura en el mundo real: construir, experimentar y resolver problemas. Sin fichas y sin pantallas.",
+        a: "No. Think Try Go trata de aprender a través del juego y la aventura en el mundo real: construir, experimentar y resolver problemas. Sin fichas y sin pantallas.",
       },
       {
         q: "¿El programa está disponible en español?",

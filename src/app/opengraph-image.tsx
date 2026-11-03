@@ -2,12 +2,12 @@ import { ImageResponse } from "next/og";
 
 /**
  * Open Graph / social share image, generated at build time (1200×630).
- * Concept: the stacked THINK / TRY / DO mark on sand, hand-drawn arrow,
+ * Concept: the stacked THINK / TRY / GO mark on sand, hand-drawn arrow,
  * one-line promise and the three key facts. Swap for a photo version later
  * (see IMAGERY.og in src/content/imagery.ts for the art-direction prompt).
  */
 
-export const alt = "Think Try Do — Real-world adventures for curious kids. Coming to Coronado, Panama. Ages 4–12.";
+export const alt = "Think Try Go — Real-world adventures for curious kids. Coming to Coronado, Panama. Ages 4–12.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -46,7 +46,7 @@ export default async function OpengraphImage() {
         <div style={{ display: "flex", flexDirection: "column", fontSize: 168, fontWeight: 900, lineHeight: 0.84, letterSpacing: -8, color: ink }}>
           <span>THINK.</span>
           <span style={{ paddingLeft: 80 }}>TRY.</span>
-          <span style={{ paddingLeft: 160, color: ember }}>DO.</span>
+          <span style={{ paddingLeft: 160, color: ember }}>GO.</span>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginLeft: 56, flex: 1 }}>
