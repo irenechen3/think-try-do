@@ -18,7 +18,8 @@ const FROM = process.env.EMAIL_FROM || "Think Try Go <hello@thinktrygo.com>";
 type Email = { to: string; subject: string; html: string; text: string; replyTo?: string };
 
 async function send(email: Email): Promise<void> {
-  const key = process.env.RESEND_API_KEY;
+  // Strip whitespace or quotes accidentally pasted into the Vercel setting.
+  const key = process.env.RESEND_API_KEY?.trim().replace(/^["']|["']$/g, "");
   if (!key) {
     console.info(`[email] RESEND_API_KEY not set — skipped "${email.subject}"`);
     return;
